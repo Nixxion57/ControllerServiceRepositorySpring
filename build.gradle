@@ -1,0 +1,85 @@
+plugins {
+    id 'org.springframework.boot' version '2.7.4'
+    id 'io.spring.dependency-management' version '1.0.14.RELEASE'
+    id 'java'
+}
+
+group = 'be.kdg.programming3'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    implementation 'org.springframework.boot:spring-boot-starter'
+//    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+//    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.webjars:bootstrap:5.2.3'
+    implementation 'org.webjars.npm:bootstrap-icons:1.9.1'
+    implementation 'org.webjars:webjars-locator:0.42'
+//    implementation 'org.springframework.boot:spring-boot-starter-validation'
+//    implementation 'org.projectlombok:lombok:1.18.26'
+//    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//    implementation 'com.google.code.gson:gson:2.9.1'
+//    implementation 'org.jetbrains:annotations:23.0.0'
+//    implementation 'junit:junit:4.13.1'
+//    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+//    runtimeOnly 'com.h2database:h2'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.jetbrains:annotations:23.0.0'
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'junit:junit:4.13.1'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'com.google.code.gson:gson:2.10'
+    implementation 'com.google.code.gson:gson:2.9.1'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    compileOnly 'org.projectlombok:lombok'
+    runtimeOnly 'com.h2database:h2'
+
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+
+//plugins {
+//    id 'org.springframework.boot' version '2.7.4'
+//    id 'io.spring.dependency-management' version '1.0.14.RELEASE'
+//    id 'java'
+//}
+//
+//group = 'be.kdg.programming3'
+//version = '0.0.1-SNAPSHOT'
+//sourceCompatibility = '17'
+//
+//repositories {
+//    mavenCentral()
+//}
+//
+//dependencies {
+//    implementation 'org.springframework.boot:spring-boot-starter'
+//    implementation 'org.springframework.boot:spring-boot-starter-web'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//    implementation 'com.google.code.gson:gson:2.9.1'
+//    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+//    implementation 'org.webjars:bootstrap:5.2.2'
+//    implementation 'org.webjars:font-awesome:6.2.0'
+//    implementation 'org.webjars:webjars-locator:0.45'
+//    implementation 'org.webjars.npm:bootstrap-icons:1.9.1'
+////    implementation 'org.springframework.boot:spring-boot-starter-validation'
+//
+//}
+//
+//tasks.named('test') {
+//    useJUnitPlatform()
+//}

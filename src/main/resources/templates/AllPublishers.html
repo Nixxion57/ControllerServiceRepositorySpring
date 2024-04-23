@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Publishers</title>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/table.css" th:href="@{/table.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/navbar.css" th:href="@{/navbar.css}"/>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap-icons/font/bootstrap-icons.css} ">
+    <script defer th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+</head>
+<body class="bg-light text-center">
+<div th:replace="~{fragments/navbar::navigationbar(3)}"></div>
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Address</td>
+        <td>Start Date</td>
+        <td>Remove</td>
+    </tr>
+    <tr th:each="publisher: ${publishers}">
+        <td th:text="${publisher.id}"/>
+        <td>
+            <a th:text="${publisher.name}" th:href="@{/publishers/publisher/{id}(id=${publisher.id})}"></a>
+
+        </td>
+        <td th:text="${publisher.address}"/>
+        <td th:text="${publisher.startDate}"/>
+        <td>
+            <form th:action="@{/removePublisher}" method="post">
+                <input type="hidden" name="id" th:value="${publisher.id}"/>
+                <button type="submit" class="btn btn-link">
+                    <span class="bi bi-trash"></span>
+                </button>
+            </form>
+        </td>
+    </tr>
+</table>
+<div th:insert="~{fragments/navbar::footer}">Programming 3, 2022</div>
+
+</body>
+
+</html>

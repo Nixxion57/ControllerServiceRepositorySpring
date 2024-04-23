@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Eiichiro Oda",
+    "gender": "M",
+    "years": 47
+  },
+  {
+    "id": 2,
+    "name": "Kouji Mori",
+    "gender": "M",
+    "years": 55
+  },
+  {
+    "id": 3,
+    "name": "Masashi Kishimoto",
+    "gender": "M",
+    "years": 47
+  },
+  {
+    "id": 4,
+    "name": "Tite Kubo",
+    "gender": "M",
+    "years": 45
+  },
+  {
+    "id": 5,
+    "name": "Naoshi Komi",
+    "gender": "M",
+    "years": 36
+  },
+  {
+    "id": 6,
+    "name": "Mikio Ikemoto",
+    "gender": "M",
+    "years": 45
+  },
+  {
+    "id": 7,
+    "name": "Kentaro Miura",
+    "gender": "M",
+    "years": 54
+  }
+]

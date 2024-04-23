@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" media="all" href="../../static/navbar.css"
+          th:href="@{../static/navbar.css}"/>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <script defer th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}">
+    </script>
+
+</head>
+<body>
+<div th:fragment="footer">
+    <p> &copy; Project Programming 3 </p>
+</div>
+
+<nav class="navbar navbar-expand-lg" style="background-color: dodgerblue " th:fragment="navigationbar(index)">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a th:href="@{/mangas}"
+                   th:class="${index==1}?'nav-item nav-link active':'nav-item nav-link'">All mangas</a>
+                <a th:href="@{/mangakas}" th:class="${index==2}?'nav-item nav-link active':'nav-item nav-link'">All
+                    mangakas</a>
+                <a th:href="@{/publishers}" th:class="${index==3}?'nav-item nav-link active':'nav-item nav-link'">All
+                    publishers</a>
+                <a th:href="@{/addManga}" th:class="${index==4}?'nav-item nav-link active':'nav-item nav-link'">Add
+                    mangas</a>
+                <a th:href="@{/addMangaka}" th:class="${index==5}?'nav-item nav-link active':'nav-item nav-link'">Add
+                    mangakas</a>
+                <a th:href="@{/addPublisher}" th:class="${index==6}?'nav-item nav-link active':'nav-item nav-link'">Add
+                    publishers</a>
+                <a th:href="@{/session}"
+                   th:class="${index==7}?'nav-item nav-link active':'nav-item nav-link'">Sessions</a>
+            </div>
+        </div>
+    </div>
+</nav>
+</body>
+</html>

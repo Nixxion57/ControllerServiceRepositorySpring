@@ -1,0 +1,758 @@
+2023-07-23 13:44:28,099 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 28472 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-07-23 13:44:28,103 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-07-23 13:44:29,158 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-23 13:44:29,172 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 13:44:29,173 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-23 13:44:29,173 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-07-23 13:44:29,288 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-23 13:44:29,288 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1119 ms
+2023-07-23 13:44:29,390 DEBUG be.kdg.programming3.mangaStore.service.MangaServiceImpl [main] constructor mangaService implementation
+2023-07-23 13:44:29,394 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [main] Creating MangakaRepository
+2023-07-23 13:44:29,716 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 13:44:29,732 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 13:44:29,743 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 2.093 seconds (JVM running for 2.726)
+2023-07-23 13:44:29,747 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Eiichiro Oda', gender=M, years=47, mangas=[Manga{id=1, title='One Piece', author='Eiichiro Oda', chapters=1062, written=2001-08-11, genre=SHONEN, pricePerCopy=12.5}]}
+2023-07-23 13:44:29,757 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kouji Mori', gender=M, years=55, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}, Manga{id=6, title='Jisatsutou', author='Kouji Mori', chapters=168, written=2002-04-01, genre=HORROR, pricePerCopy=11.99}]}
+2023-07-23 13:44:29,757 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Masashi Kishimoto', gender=M, years=47, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 13:44:29,757 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Tite Kubo', gender=M, years=45, mangas=[Manga{id=3, title='Bleach', author='Tite Kubo', chapters=686, written=2003-10-20, genre=FANTASY, pricePerCopy=13.6}]}
+2023-07-23 13:44:29,759 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Naoshi Komi', gender=M, years=36, mangas=[Manga{id=4, title='Nisekoi', author='Naoshi Komi', chapters=282, written=2004-06-02, genre=ROMANCE, pricePerCopy=11.3}]}
+2023-07-23 13:44:29,759 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Mikio Ikemoto', gender=M, years=45, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 13:44:29,759 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kentaro Miura', gender=M, years=54, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}]}
+2023-07-23 13:44:44,016 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 13:44:44,016 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-23 13:44:44,017 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-07-23 13:44:44,074 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [http-nio-8080-exec-1] Getting mangakas...
+2023-07-23 13:44:44,075 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [http-nio-8080-exec-1] Reading mangakas from database
+2023-07-23 13:44:50,642 INFO be.kdg.programming3.mangaStore.presentation.MangaController [http-nio-8080-exec-10] controller is running showMangasView!
+2023-07-23 13:45:22,403 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [http-nio-8080-exec-4] Getting mangakas...
+2023-07-23 13:45:22,404 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [http-nio-8080-exec-4] Reading mangakas from database
+2023-07-23 19:34:42,251 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 29736 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-07-23 19:34:42,257 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-07-23 19:34:42,271 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-07-23 19:34:43,861 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-23 19:34:43,881 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 19:34:43,882 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-23 19:34:43,883 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-07-23 19:34:44,084 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-23 19:34:44,085 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1732 ms
+2023-07-23 19:34:44,243 DEBUG be.kdg.programming3.mangaStore.service.MangaServiceImpl [main] constructor mangaService implementation
+2023-07-23 19:34:44,250 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [main] Creating MangakaRepository
+2023-07-23 19:34:45,330 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 19:34:45,366 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 19:34:45,383 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 3.785 seconds (JVM running for 4.972)
+2023-07-23 19:34:45,388 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Eiichiro Oda', gender=M, years=47, mangas=[Manga{id=1, title='One Piece', author='Eiichiro Oda', chapters=1062, written=2001-08-11, genre=SHONEN, pricePerCopy=12.5}]}
+2023-07-23 19:34:45,405 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kouji Mori', gender=M, years=55, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}, Manga{id=6, title='Jisatsutou', author='Kouji Mori', chapters=168, written=2002-04-01, genre=HORROR, pricePerCopy=11.99}]}
+2023-07-23 19:34:45,407 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Masashi Kishimoto', gender=M, years=47, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 19:34:45,408 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Tite Kubo', gender=M, years=45, mangas=[Manga{id=3, title='Bleach', author='Tite Kubo', chapters=686, written=2003-10-20, genre=FANTASY, pricePerCopy=13.6}]}
+2023-07-23 19:34:45,408 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Naoshi Komi', gender=M, years=36, mangas=[Manga{id=4, title='Nisekoi', author='Naoshi Komi', chapters=282, written=2004-06-02, genre=ROMANCE, pricePerCopy=11.3}]}
+2023-07-23 19:34:45,408 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Mikio Ikemoto', gender=M, years=45, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 19:34:45,409 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kentaro Miura', gender=M, years=54, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}]}
+2023-07-23 19:35:03,279 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 19:35:03,280 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-23 19:35:03,281 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-07-23 19:35:04,080 ERROR org.thymeleaf.TemplateEngine [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1] Exception processing template "addMangaka": Exception evaluating SpringEL expression: "#fields.hasErrors('name')" (template: "addMangaka" - line 18, col 24)
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#fields.hasErrors('name')" (template: "addMangaka" - line 18, col 24)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1405)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1149)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'MangakaViewModel' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:903)
+	at org.thymeleaf.spring5.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:253)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.checkErrors(FieldUtils.java:212)
+	at org.thymeleaf.spring5.util.FieldUtils.hasErrors(FieldUtils.java:71)
+	at org.thymeleaf.spring5.expression.Fields.hasErrors(Fields.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.expression.spel.support.ReflectiveMethodExecutor.execute(ReflectiveMethodExecutor.java:139)
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:139)
+	at org.springframework.expression.spel.ast.MethodReference.access$000(MethodReference.java:55)
+	at org.springframework.expression.spel.ast.MethodReference$MethodValueRef.getValue(MethodReference.java:386)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 63 common frames omitted
+2023-07-23 19:35:04,084 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#fields.hasErrors('name')" (template: "addMangaka" - line 18, col 24)] with root cause
+java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'MangakaViewModel' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:903)
+	at org.thymeleaf.spring5.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:253)
+	at org.thymeleaf.spring5.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring5.util.FieldUtils.checkErrors(FieldUtils.java:212)
+	at org.thymeleaf.spring5.util.FieldUtils.hasErrors(FieldUtils.java:71)
+	at org.thymeleaf.spring5.expression.Fields.hasErrors(Fields.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.expression.spel.support.ReflectiveMethodExecutor.execute(ReflectiveMethodExecutor.java:139)
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:139)
+	at org.springframework.expression.spel.ast.MethodReference.access$000(MethodReference.java:55)
+	at org.springframework.expression.spel.ast.MethodReference$MethodValueRef.getValue(MethodReference.java:386)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1405)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1149)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-23 19:35:37,105 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-07-23 19:35:37,112 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 22012 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-07-23 19:35:37,115 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-07-23 19:35:38,675 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-23 19:35:38,690 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 19:35:38,692 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-23 19:35:38,693 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-07-23 19:35:38,884 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-23 19:35:38,885 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1686 ms
+2023-07-23 19:35:39,028 DEBUG be.kdg.programming3.mangaStore.service.MangaServiceImpl [main] constructor mangaService implementation
+2023-07-23 19:35:39,034 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [main] Creating MangakaRepository
+2023-07-23 19:35:40,101 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 19:35:40,133 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 19:35:40,151 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 3.648 seconds (JVM running for 4.813)
+2023-07-23 19:35:40,156 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Eiichiro Oda', gender=M, years=47, mangas=[Manga{id=1, title='One Piece', author='Eiichiro Oda', chapters=1062, written=2001-08-11, genre=SHONEN, pricePerCopy=12.5}]}
+2023-07-23 19:35:40,175 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kouji Mori', gender=M, years=55, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}, Manga{id=6, title='Jisatsutou', author='Kouji Mori', chapters=168, written=2002-04-01, genre=HORROR, pricePerCopy=11.99}]}
+2023-07-23 19:35:40,175 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Masashi Kishimoto', gender=M, years=47, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 19:35:40,176 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Tite Kubo', gender=M, years=45, mangas=[Manga{id=3, title='Bleach', author='Tite Kubo', chapters=686, written=2003-10-20, genre=FANTASY, pricePerCopy=13.6}]}
+2023-07-23 19:35:40,176 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Naoshi Komi', gender=M, years=36, mangas=[Manga{id=4, title='Nisekoi', author='Naoshi Komi', chapters=282, written=2004-06-02, genre=ROMANCE, pricePerCopy=11.3}]}
+2023-07-23 19:35:40,176 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Mikio Ikemoto', gender=M, years=45, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 19:35:40,176 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kentaro Miura', gender=M, years=54, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}]}
+2023-07-23 19:35:43,605 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 19:35:43,606 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-23 19:35:43,609 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2023-07-23 19:39:17,009 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-07-23 19:39:17,020 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 30444 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-07-23 19:39:17,021 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-07-23 19:39:18,750 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-23 19:39:18,767 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 19:39:18,768 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-23 19:39:18,770 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-07-23 19:39:18,949 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-23 19:39:18,950 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1850 ms
+2023-07-23 19:39:19,091 DEBUG be.kdg.programming3.mangaStore.service.MangaServiceImpl [main] constructor mangaService implementation
+2023-07-23 19:39:19,105 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [main] Creating MangakaRepository
+2023-07-23 19:39:20,168 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 19:39:20,205 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 19:39:20,224 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 3.804 seconds (JVM running for 4.997)
+2023-07-23 19:39:20,230 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Eiichiro Oda', gender=M, years=47, mangas=[Manga{id=1, title='One Piece', author='Eiichiro Oda', chapters=1062, written=2001-08-11, genre=SHONEN, pricePerCopy=12.5}]}
+2023-07-23 19:39:20,249 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kouji Mori', gender=M, years=55, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}, Manga{id=6, title='Jisatsutou', author='Kouji Mori', chapters=168, written=2002-04-01, genre=HORROR, pricePerCopy=11.99}]}
+2023-07-23 19:39:20,250 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Masashi Kishimoto', gender=M, years=47, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 19:39:20,250 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Tite Kubo', gender=M, years=45, mangas=[Manga{id=3, title='Bleach', author='Tite Kubo', chapters=686, written=2003-10-20, genre=FANTASY, pricePerCopy=13.6}]}
+2023-07-23 19:39:20,250 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Naoshi Komi', gender=M, years=36, mangas=[Manga{id=4, title='Nisekoi', author='Naoshi Komi', chapters=282, written=2004-06-02, genre=ROMANCE, pricePerCopy=11.3}]}
+2023-07-23 19:39:20,250 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Mikio Ikemoto', gender=M, years=45, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 19:39:20,250 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kentaro Miura', gender=M, years=54, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}]}
+2023-07-23 19:39:29,609 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 19:39:29,610 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-23 19:39:29,611 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-07-23 19:39:38,917 INFO be.kdg.programming3.mangaStore.presentation.MangaController [http-nio-8080-exec-6] controller is running showMangasView!
+2023-07-23 19:39:45,300 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [http-nio-8080-exec-9] Getting mangakas...
+2023-07-23 19:39:45,301 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [http-nio-8080-exec-9] Reading mangakas from database
+2023-07-23 19:40:54,096 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors<EOL>Field error in object 'mangaka' on field 'gender': rejected value [malsdsdew]; codes [typeMismatch.mangaka.gender,typeMismatch.gender,typeMismatch.char,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mangaka.gender,gender]; arguments []; default message [gender]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'char' for property 'gender'; nested exception is java.lang.IllegalArgumentException: String [malsdsdew] with length 9 cannot be converted to char type: neither Unicode nor single character]<EOL>Field error in object 'mangaka' on field 'years': rejected value [0]; codes [Min.mangaka.years,Min.years,Min.int,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mangaka.years,years]; arguments []; default message [years],1]; default message [must be greater than or equal to 1]]
+2023-07-23 19:41:03,816 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors<EOL>Field error in object 'mangaka' on field 'gender': rejected value [malsdsdew]; codes [typeMismatch.mangaka.gender,typeMismatch.gender,typeMismatch.char,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mangaka.gender,gender]; arguments []; default message [gender]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'char' for property 'gender'; nested exception is java.lang.IllegalArgumentException: String [malsdsdew] with length 9 cannot be converted to char type: neither Unicode nor single character]<EOL>Field error in object 'mangaka' on field 'years': rejected value [0]; codes [Min.mangaka.years,Min.years,Min.int,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mangaka.years,years]; arguments []; default message [years],1]; default message [must be greater than or equal to 1]]
+2023-07-23 19:41:37,361 INFO be.kdg.programming3.mangaStore.presentation.AddMangakaController [http-nio-8080-exec-10] Processing MangakaViewModel{id=0, name='smth', gender=M, years=30}
+2023-07-23 19:41:37,368 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-10] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "be.kdg.programming3.mangaStore.service.MangakaService.addMangaka(String, char, int)" because "this.mangakaService" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "be.kdg.programming3.mangaStore.service.MangakaService.addMangaka(String, char, int)" because "this.mangakaService" is null
+	at be.kdg.programming3.mangaStore.presentation.AddMangakaController.processAddMangaka(AddMangakaController.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-23 19:47:35,992 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-07-23 19:47:36,006 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 24136 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-07-23 19:47:36,008 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-07-23 19:47:37,595 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-23 19:47:37,612 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 19:47:37,613 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-23 19:47:37,614 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-07-23 19:47:37,809 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-23 19:47:37,810 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1724 ms
+2023-07-23 19:47:37,971 DEBUG be.kdg.programming3.mangaStore.service.MangaServiceImpl [main] constructor mangaService implementation
+2023-07-23 19:47:37,977 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [main] Creating MangakaRepository
+2023-07-23 19:47:38,998 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 19:47:39,029 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 19:47:39,046 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 3.719 seconds (JVM running for 4.912)
+2023-07-23 19:47:39,050 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Eiichiro Oda', gender=M, years=47, mangas=[Manga{id=1, title='One Piece', author='Eiichiro Oda', chapters=1062, written=2001-08-11, genre=SHONEN, pricePerCopy=12.5}]}
+2023-07-23 19:47:39,068 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kouji Mori', gender=M, years=55, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}, Manga{id=6, title='Jisatsutou', author='Kouji Mori', chapters=168, written=2002-04-01, genre=HORROR, pricePerCopy=11.99}]}
+2023-07-23 19:47:39,069 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Masashi Kishimoto', gender=M, years=47, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 19:47:39,070 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Tite Kubo', gender=M, years=45, mangas=[Manga{id=3, title='Bleach', author='Tite Kubo', chapters=686, written=2003-10-20, genre=FANTASY, pricePerCopy=13.6}]}
+2023-07-23 19:47:39,070 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Naoshi Komi', gender=M, years=36, mangas=[Manga{id=4, title='Nisekoi', author='Naoshi Komi', chapters=282, written=2004-06-02, genre=ROMANCE, pricePerCopy=11.3}]}
+2023-07-23 19:47:39,070 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Mikio Ikemoto', gender=M, years=45, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 19:47:39,070 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kentaro Miura', gender=M, years=54, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}]}
+2023-07-23 19:47:44,346 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 19:47:44,347 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-23 19:47:44,352 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 4 ms
+2023-07-23 19:47:44,612 INFO be.kdg.programming3.mangaStore.presentation.AddMangakaController [http-nio-8080-exec-1] Processing MangakaViewModel{id=0, name='smth', gender=M, years=30}
+2023-07-23 19:47:44,620 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "be.kdg.programming3.mangaStore.service.MangakaService.addMangaka(String, char, int)" because "this.mangakaService" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "be.kdg.programming3.mangaStore.service.MangakaService.addMangaka(String, char, int)" because "this.mangakaService" is null
+	at be.kdg.programming3.mangaStore.presentation.AddMangakaController.processAddMangaka(AddMangakaController.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-23 19:50:08,046 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-07-23 19:50:08,057 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 26096 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-07-23 19:50:08,059 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-07-23 19:50:09,644 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-23 19:50:09,659 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 19:50:09,660 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-23 19:50:09,661 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-07-23 19:50:09,850 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-23 19:50:09,851 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1713 ms
+2023-07-23 19:50:09,995 DEBUG be.kdg.programming3.mangaStore.service.MangaServiceImpl [main] constructor mangaService implementation
+2023-07-23 19:50:10,003 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [main] Creating MangakaRepository
+2023-07-23 19:50:11,032 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 19:50:11,063 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 19:50:11,080 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 3.596 seconds (JVM running for 4.782)
+2023-07-23 19:50:11,085 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Eiichiro Oda', gender=M, years=47, mangas=[Manga{id=1, title='One Piece', author='Eiichiro Oda', chapters=1062, written=2001-08-11, genre=SHONEN, pricePerCopy=12.5}]}
+2023-07-23 19:50:11,102 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kouji Mori', gender=M, years=55, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}, Manga{id=6, title='Jisatsutou', author='Kouji Mori', chapters=168, written=2002-04-01, genre=HORROR, pricePerCopy=11.99}]}
+2023-07-23 19:50:11,103 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Masashi Kishimoto', gender=M, years=47, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 19:50:11,103 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Tite Kubo', gender=M, years=45, mangas=[Manga{id=3, title='Bleach', author='Tite Kubo', chapters=686, written=2003-10-20, genre=FANTASY, pricePerCopy=13.6}]}
+2023-07-23 19:50:11,103 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Naoshi Komi', gender=M, years=36, mangas=[Manga{id=4, title='Nisekoi', author='Naoshi Komi', chapters=282, written=2004-06-02, genre=ROMANCE, pricePerCopy=11.3}]}
+2023-07-23 19:50:11,104 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Mikio Ikemoto', gender=M, years=45, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 19:50:11,104 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kentaro Miura', gender=M, years=54, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}]}
+2023-07-23 19:50:21,377 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 19:50:21,378 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-23 19:50:21,380 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2023-07-23 19:50:21,713 WARN org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [105] milliseconds.
+2023-07-23 19:50:21,726 INFO be.kdg.programming3.mangaStore.presentation.AddMangakaController [http-nio-8080-exec-1] Processing MangakaViewModel{id=0, name='smth', gender=M, years=30}
+2023-07-23 19:50:21,736 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "be.kdg.programming3.mangaStore.service.MangakaService.addMangaka(String, char, int)" because "this.mangakaService" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "be.kdg.programming3.mangaStore.service.MangakaService.addMangaka(String, char, int)" because "this.mangakaService" is null
+	at be.kdg.programming3.mangaStore.presentation.AddMangakaController.processAddMangaka(AddMangakaController.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-23 19:50:35,657 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-07-23 19:50:35,669 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 17820 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-07-23 19:50:35,671 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-07-23 19:50:37,250 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-23 19:50:37,264 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 19:50:37,265 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-23 19:50:37,266 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-07-23 19:50:37,450 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-23 19:50:37,451 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1695 ms
+2023-07-23 19:50:37,589 DEBUG be.kdg.programming3.mangaStore.service.MangaServiceImpl [main] constructor mangaService implementation
+2023-07-23 19:50:37,596 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [main] Creating MangakaRepository
+2023-07-23 19:50:38,620 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 19:50:38,652 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 19:50:38,669 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 3.573 seconds (JVM running for 4.722)
+2023-07-23 19:50:38,674 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Eiichiro Oda', gender=M, years=47, mangas=[Manga{id=1, title='One Piece', author='Eiichiro Oda', chapters=1062, written=2001-08-11, genre=SHONEN, pricePerCopy=12.5}]}
+2023-07-23 19:50:38,691 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kouji Mori', gender=M, years=55, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}, Manga{id=6, title='Jisatsutou', author='Kouji Mori', chapters=168, written=2002-04-01, genre=HORROR, pricePerCopy=11.99}]}
+2023-07-23 19:50:38,693 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Masashi Kishimoto', gender=M, years=47, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 19:50:38,693 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Tite Kubo', gender=M, years=45, mangas=[Manga{id=3, title='Bleach', author='Tite Kubo', chapters=686, written=2003-10-20, genre=FANTASY, pricePerCopy=13.6}]}
+2023-07-23 19:50:38,693 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Naoshi Komi', gender=M, years=36, mangas=[Manga{id=4, title='Nisekoi', author='Naoshi Komi', chapters=282, written=2004-06-02, genre=ROMANCE, pricePerCopy=11.3}]}
+2023-07-23 19:50:38,693 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Mikio Ikemoto', gender=M, years=45, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 19:50:38,693 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kentaro Miura', gender=M, years=54, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}]}
+2023-07-23 19:50:43,811 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 19:50:43,812 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-23 19:50:43,815 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2023-07-23 19:50:44,115 INFO be.kdg.programming3.mangaStore.presentation.AddMangakaController [http-nio-8080-exec-1] Processing MangakaViewModel{id=0, name='smth', gender=M, years=30}
+2023-07-23 19:50:44,127 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "be.kdg.programming3.mangaStore.service.MangakaService.addMangaka(String, char, int)" because "this.mangakaService" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "be.kdg.programming3.mangaStore.service.MangakaService.addMangaka(String, char, int)" because "this.mangakaService" is null
+	at be.kdg.programming3.mangaStore.presentation.AddMangakaController.processAddMangaka(AddMangakaController.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-23 19:52:20,710 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-07-23 19:52:20,725 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 4688 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-07-23 19:52:20,730 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-07-23 19:52:22,504 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-23 19:52:22,523 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 19:52:22,524 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-23 19:52:22,525 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-07-23 19:52:22,726 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-23 19:52:22,727 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1895 ms
+2023-07-23 19:52:22,889 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [main] Creating MangakaRepository
+2023-07-23 19:52:22,901 DEBUG be.kdg.programming3.mangaStore.service.MangaServiceImpl [main] constructor mangaService implementation
+2023-07-23 19:52:23,971 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 19:52:24,011 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 19:52:24,027 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 3.91 seconds (JVM running for 5.06)
+2023-07-23 19:52:24,033 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Eiichiro Oda', gender=M, years=47, mangas=[Manga{id=1, title='One Piece', author='Eiichiro Oda', chapters=1062, written=2001-08-11, genre=SHONEN, pricePerCopy=12.5}]}
+2023-07-23 19:52:24,056 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kouji Mori', gender=M, years=55, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}, Manga{id=6, title='Jisatsutou', author='Kouji Mori', chapters=168, written=2002-04-01, genre=HORROR, pricePerCopy=11.99}]}
+2023-07-23 19:52:24,058 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Masashi Kishimoto', gender=M, years=47, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 19:52:24,058 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Tite Kubo', gender=M, years=45, mangas=[Manga{id=3, title='Bleach', author='Tite Kubo', chapters=686, written=2003-10-20, genre=FANTASY, pricePerCopy=13.6}]}
+2023-07-23 19:52:24,058 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Naoshi Komi', gender=M, years=36, mangas=[Manga{id=4, title='Nisekoi', author='Naoshi Komi', chapters=282, written=2004-06-02, genre=ROMANCE, pricePerCopy=11.3}]}
+2023-07-23 19:52:24,058 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Mikio Ikemoto', gender=M, years=45, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 19:52:24,059 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kentaro Miura', gender=M, years=54, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}]}
+2023-07-23 19:52:35,198 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 19:52:35,198 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-23 19:52:35,199 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-07-23 19:52:35,437 INFO be.kdg.programming3.mangaStore.presentation.AddMangakaController [http-nio-8080-exec-1] Processing MangakaViewModel{id=0, name='smth', gender=M, years=30}
+2023-07-23 19:52:35,437 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [http-nio-8080-exec-1] Adding new mangaka with name smth
+2023-07-23 19:52:35,437 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [http-nio-8080-exec-1] Creating the mangaka Mangaka{id=-1, name='smth', gender=M, years=30, mangas=null}
+2023-07-23 19:52:35,511 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [http-nio-8080-exec-4] Getting mangakas...
+2023-07-23 19:52:35,513 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [http-nio-8080-exec-4] Reading mangakas from database
+2023-07-23 20:02:45,436 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 14792 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-07-23 20:02:45,436 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-07-23 20:02:45,442 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-07-23 20:02:47,221 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-23 20:02:47,238 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 20:02:47,239 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-23 20:02:47,240 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-07-23 20:02:47,423 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-23 20:02:47,425 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1885 ms
+2023-07-23 20:02:47,594 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [main] Creating MangakaRepository
+2023-07-23 20:02:47,605 DEBUG be.kdg.programming3.mangaStore.service.MangaServiceImpl [main] constructor mangaService implementation
+2023-07-23 20:02:48,779 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 20:02:48,812 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 20:02:48,829 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 4.064 seconds (JVM running for 5.442)
+2023-07-23 20:02:48,834 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Eiichiro Oda', gender=M, years=47, mangas=[Manga{id=1, title='One Piece', author='Eiichiro Oda', chapters=1062, written=2001-08-11, genre=SHONEN, pricePerCopy=12.5}]}
+2023-07-23 20:02:48,851 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kouji Mori', gender=M, years=55, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}, Manga{id=6, title='Jisatsutou', author='Kouji Mori', chapters=168, written=2002-04-01, genre=HORROR, pricePerCopy=11.99}]}
+2023-07-23 20:02:48,852 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Masashi Kishimoto', gender=M, years=47, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 20:02:48,852 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Tite Kubo', gender=M, years=45, mangas=[Manga{id=3, title='Bleach', author='Tite Kubo', chapters=686, written=2003-10-20, genre=FANTASY, pricePerCopy=13.6}]}
+2023-07-23 20:02:48,852 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Naoshi Komi', gender=M, years=36, mangas=[Manga{id=4, title='Nisekoi', author='Naoshi Komi', chapters=282, written=2004-06-02, genre=ROMANCE, pricePerCopy=11.3}]}
+2023-07-23 20:02:48,852 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Mikio Ikemoto', gender=M, years=45, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 20:02:48,854 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kentaro Miura', gender=M, years=54, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}]}
+2023-07-23 20:04:24,878 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-07-23 20:04:24,884 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 22088 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-07-23 20:04:24,886 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-07-23 20:04:26,613 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-23 20:04:26,629 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 20:04:26,630 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-23 20:04:26,632 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-07-23 20:04:26,847 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-23 20:04:26,848 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1871 ms
+2023-07-23 20:04:27,034 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [main] Creating MangakaRepository
+2023-07-23 20:04:27,045 DEBUG be.kdg.programming3.mangaStore.service.MangaServiceImpl [main] constructor mangaService implementation
+2023-07-23 20:04:28,227 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 20:04:28,268 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 20:04:28,288 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 4.034 seconds (JVM running for 5.288)
+2023-07-23 20:04:28,294 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Eiichiro Oda', gender=M, years=47, mangas=[Manga{id=1, title='One Piece', author='Eiichiro Oda', chapters=1062, written=2001-08-11, genre=SHONEN, pricePerCopy=12.5}]}
+2023-07-23 20:04:28,317 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kouji Mori', gender=M, years=55, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}, Manga{id=6, title='Jisatsutou', author='Kouji Mori', chapters=168, written=2002-04-01, genre=HORROR, pricePerCopy=11.99}]}
+2023-07-23 20:04:28,318 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Masashi Kishimoto', gender=M, years=47, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 20:04:28,318 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Tite Kubo', gender=M, years=45, mangas=[Manga{id=3, title='Bleach', author='Tite Kubo', chapters=686, written=2003-10-20, genre=FANTASY, pricePerCopy=13.6}]}
+2023-07-23 20:04:28,318 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Naoshi Komi', gender=M, years=36, mangas=[Manga{id=4, title='Nisekoi', author='Naoshi Komi', chapters=282, written=2004-06-02, genre=ROMANCE, pricePerCopy=11.3}]}
+2023-07-23 20:04:28,318 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Mikio Ikemoto', gender=M, years=45, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 20:04:28,319 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kentaro Miura', gender=M, years=54, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}]}
+2023-07-23 20:04:42,581 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 20:04:42,582 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-23 20:04:42,584 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-07-23 20:05:45,608 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-07-23 20:05:45,618 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 9292 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-07-23 20:05:45,621 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-07-23 20:05:47,437 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-23 20:05:47,452 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 20:05:47,453 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-23 20:05:47,454 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-07-23 20:05:47,632 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-23 20:05:47,633 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1936 ms
+2023-07-23 20:05:47,766 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [main] Creating MangakaRepository
+2023-07-23 20:05:47,776 DEBUG be.kdg.programming3.mangaStore.service.MangaServiceImpl [main] constructor mangaService implementation
+2023-07-23 20:05:48,773 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 20:05:48,804 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 20:05:48,822 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 3.782 seconds (JVM running for 4.971)
+2023-07-23 20:05:48,827 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Eiichiro Oda', gender=M, years=47, mangas=[Manga{id=1, title='One Piece', author='Eiichiro Oda', chapters=1062, written=2001-08-11, genre=SHONEN, pricePerCopy=12.5}]}
+2023-07-23 20:05:48,844 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kouji Mori', gender=M, years=55, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}, Manga{id=6, title='Jisatsutou', author='Kouji Mori', chapters=168, written=2002-04-01, genre=HORROR, pricePerCopy=11.99}]}
+2023-07-23 20:05:48,845 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Masashi Kishimoto', gender=M, years=47, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 20:05:48,846 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Tite Kubo', gender=M, years=45, mangas=[Manga{id=3, title='Bleach', author='Tite Kubo', chapters=686, written=2003-10-20, genre=FANTASY, pricePerCopy=13.6}]}
+2023-07-23 20:05:48,846 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Naoshi Komi', gender=M, years=36, mangas=[Manga{id=4, title='Nisekoi', author='Naoshi Komi', chapters=282, written=2004-06-02, genre=ROMANCE, pricePerCopy=11.3}]}
+2023-07-23 20:05:48,846 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Mikio Ikemoto', gender=M, years=45, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 20:05:48,846 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kentaro Miura', gender=M, years=54, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}]}
+2023-07-23 20:05:53,039 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 20:05:53,040 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-23 20:05:53,041 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-07-23 20:07:24,793 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 26368 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-07-23 20:07:24,776 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-07-23 20:07:24,798 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-07-23 20:07:26,451 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-23 20:07:26,467 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 20:07:26,468 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-23 20:07:26,469 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-07-23 20:07:26,670 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-23 20:07:26,671 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1783 ms
+2023-07-23 20:07:26,849 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [main] Creating MangakaRepository
+2023-07-23 20:07:26,863 DEBUG be.kdg.programming3.mangaStore.service.MangaServiceImpl [main] constructor mangaService implementation
+2023-07-23 20:07:27,866 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 20:07:27,896 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 20:07:27,913 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 3.839 seconds (JVM running for 5.077)
+2023-07-23 20:07:27,919 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Eiichiro Oda', gender=M, years=47, mangas=[Manga{id=1, title='One Piece', author='Eiichiro Oda', chapters=1062, written=2001-08-11, genre=SHONEN, pricePerCopy=12.5}]}
+2023-07-23 20:07:27,937 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kouji Mori', gender=M, years=55, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}, Manga{id=6, title='Jisatsutou', author='Kouji Mori', chapters=168, written=2002-04-01, genre=HORROR, pricePerCopy=11.99}]}
+2023-07-23 20:07:27,937 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Masashi Kishimoto', gender=M, years=47, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 20:07:27,938 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Tite Kubo', gender=M, years=45, mangas=[Manga{id=3, title='Bleach', author='Tite Kubo', chapters=686, written=2003-10-20, genre=FANTASY, pricePerCopy=13.6}]}
+2023-07-23 20:07:27,938 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Naoshi Komi', gender=M, years=36, mangas=[Manga{id=4, title='Nisekoi', author='Naoshi Komi', chapters=282, written=2004-06-02, genre=ROMANCE, pricePerCopy=11.3}]}
+2023-07-23 20:07:27,938 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Mikio Ikemoto', gender=M, years=45, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 20:07:27,938 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kentaro Miura', gender=M, years=54, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}]}
+2023-07-23 20:07:29,246 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 20:07:29,246 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-23 20:07:29,248 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2023-07-23 20:07:43,928 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [http-nio-8080-exec-1] Getting mangakas...
+2023-07-23 20:07:43,929 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [http-nio-8080-exec-1] Reading mangakas from database
+2023-07-23 20:07:47,917 INFO be.kdg.programming3.mangaStore.presentation.MangaController [http-nio-8080-exec-3] controller is running showMangasView!
+2023-07-23 20:07:54,812 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [http-nio-8080-exec-4] Getting mangakas...
+2023-07-23 20:07:54,815 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [http-nio-8080-exec-4] Reading mangakas from database
+2023-07-23 20:09:20,694 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-07-23 20:09:20,703 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 23028 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-07-23 20:09:20,706 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-07-23 20:09:22,435 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-23 20:09:22,453 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 20:09:22,454 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-23 20:09:22,455 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-07-23 20:09:22,650 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-23 20:09:22,651 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1850 ms
+2023-07-23 20:09:22,797 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [main] Creating MangakaRepository
+2023-07-23 20:09:22,807 DEBUG be.kdg.programming3.mangaStore.service.MangaServiceImpl [main] constructor mangaService implementation
+2023-07-23 20:09:23,816 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 20:09:23,847 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 20:09:23,865 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 3.788 seconds (JVM running for 5.038)
+2023-07-23 20:09:23,870 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Eiichiro Oda', gender=M, years=47, mangas=[Manga{id=1, title='One Piece', author='Eiichiro Oda', chapters=1062, written=2001-08-11, genre=SHONEN, pricePerCopy=12.5}]}
+2023-07-23 20:09:23,889 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kouji Mori', gender=M, years=55, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}, Manga{id=6, title='Jisatsutou', author='Kouji Mori', chapters=168, written=2002-04-01, genre=HORROR, pricePerCopy=11.99}]}
+2023-07-23 20:09:23,890 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Masashi Kishimoto', gender=M, years=47, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 20:09:23,891 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Tite Kubo', gender=M, years=45, mangas=[Manga{id=3, title='Bleach', author='Tite Kubo', chapters=686, written=2003-10-20, genre=FANTASY, pricePerCopy=13.6}]}
+2023-07-23 20:09:23,891 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Naoshi Komi', gender=M, years=36, mangas=[Manga{id=4, title='Nisekoi', author='Naoshi Komi', chapters=282, written=2004-06-02, genre=ROMANCE, pricePerCopy=11.3}]}
+2023-07-23 20:09:23,892 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Mikio Ikemoto', gender=M, years=45, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 20:09:23,892 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kentaro Miura', gender=M, years=54, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}]}
+2023-07-23 20:09:26,364 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 20:09:26,365 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-23 20:09:26,366 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-07-23 20:09:26,496 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [http-nio-8080-exec-1] Getting mangakas...
+2023-07-23 20:09:26,497 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [http-nio-8080-exec-1] Reading mangakas from database
+2023-07-23 20:10:16,415 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-07-23 20:10:16,422 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 24620 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-07-23 20:10:16,425 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-07-23 20:10:18,139 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-07-23 20:10:18,159 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-23 20:10:18,160 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-07-23 20:10:18,160 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-07-23 20:10:18,382 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-07-23 20:10:18,383 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1875 ms
+2023-07-23 20:10:18,561 INFO be.kdg.programming3.mangaStore.service.MangakaServiceImpl [main] Creating MangakaRepository
+2023-07-23 20:10:18,579 DEBUG be.kdg.programming3.mangaStore.service.MangaServiceImpl [main] constructor mangaService implementation
+2023-07-23 20:10:19,700 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-07-23 20:10:19,745 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-23 20:10:19,767 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 3.916 seconds (JVM running for 5.119)
+2023-07-23 20:10:19,774 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Eiichiro Oda', gender=M, years=47, mangas=[Manga{id=1, title='One Piece', author='Eiichiro Oda', chapters=1062, written=2001-08-11, genre=SHONEN, pricePerCopy=12.5}]}
+2023-07-23 20:10:19,803 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kouji Mori', gender=M, years=55, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}, Manga{id=6, title='Jisatsutou', author='Kouji Mori', chapters=168, written=2002-04-01, genre=HORROR, pricePerCopy=11.99}]}
+2023-07-23 20:10:19,805 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Masashi Kishimoto', gender=M, years=47, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 20:10:19,806 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Tite Kubo', gender=M, years=45, mangas=[Manga{id=3, title='Bleach', author='Tite Kubo', chapters=686, written=2003-10-20, genre=FANTASY, pricePerCopy=13.6}]}
+2023-07-23 20:10:19,806 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Naoshi Komi', gender=M, years=36, mangas=[Manga{id=4, title='Nisekoi', author='Naoshi Komi', chapters=282, written=2004-06-02, genre=ROMANCE, pricePerCopy=11.3}]}
+2023-07-23 20:10:19,807 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Mikio Ikemoto', gender=M, years=45, mangas=[Manga{id=2, title='Naruto', author='Masashi Kishimoto', chapters=700, written=2002-12-16, genre=ACTION, pricePerCopy=10.0}]}
+2023-07-23 20:10:19,808 INFO be.kdg.programming3.mangaStore.repository.javaCollection.ListMangakaRepository [main] Creating the mangaka Mangaka{id=-1, name='Kentaro Miura', gender=M, years=54, mangas=[Manga{id=5, title='Berserk', author='Kentaro Miura', chapters=370, written=2003-03-29, genre=HORROR, pricePerCopy=10.99}]}
+2023-07-23 20:10:21,681 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-23 20:10:21,682 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-07-23 20:10:21,683 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms

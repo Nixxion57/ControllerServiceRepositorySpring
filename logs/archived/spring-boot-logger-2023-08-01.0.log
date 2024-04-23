@@ -1,0 +1,55 @@
+2023-08-01 13:11:29,679 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-08-01 13:11:29,699 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 25088 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-08-01 13:11:29,700 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-08-01 13:11:29,701 INFO org.springframework.boot.SpringApplication [main] The following 2 profiles are active: "springdata", "web"
+2023-08-01 13:11:30,623 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-01 13:11:30,626 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-08-01 13:11:30,679 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface be.kdg.programming3.mangaStore.repository.springDataJpa.SpringDataJpaMangaRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-08-01 13:11:30,682 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface be.kdg.programming3.mangaStore.repository.springDataJpa.SpringDataJpaMangakaRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-08-01 13:11:30,685 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface be.kdg.programming3.mangaStore.repository.springDataJpa.SpringDataPublisherRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-08-01 13:11:30,686 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 51 ms. Found 0 JDBC repository interfaces.
+2023-08-01 13:11:30,696 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-08-01 13:11:30,697 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-01 13:11:30,752 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+2023-08-01 13:11:31,440 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-08-01 13:11:31,456 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-01 13:11:31,456 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-08-01 13:11:31,456 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-08-01 13:11:31,721 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-08-01 13:11:31,722 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1967 ms
+2023-08-01 13:11:31,839 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-08-01 13:11:32,152 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-08-01 13:11:32,299 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-01 13:11:32,381 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.11.Final
+2023-08-01 13:11:32,540 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-08-01 13:11:32,698 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-08-01 13:11:33,338 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-01 13:11:33,347 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-01 13:11:33,783 DEBUG be.kdg.programming3.mangaStore.presentation.MangakaController [main] Creating MangakaController
+2023-08-01 13:11:33,845 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-01 13:11:34,801 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-08-01 13:11:34,824 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-01 13:11:34,832 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 5.495 seconds (JVM running for 6.182)
+2023-08-01 13:11:44,564 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-01 13:11:44,564 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-08-01 13:11:44,565 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2023-08-01 13:11:58,394 INFO be.kdg.programming3.mangaStore.presentation.MangaController [http-nio-8080-exec-4] controller is running showMangasView!
+2023-08-01 13:12:00,382 INFO be.kdg.programming3.mangaStore.presentation.PublisherController [http-nio-8080-exec-8] controller is running PublishersView!
+2023-08-01 13:12:04,899 INFO be.kdg.programming3.mangaStore.presentation.MangaController [http-nio-8080-exec-5] controller is running showMangasView!
+2023-08-01 13:12:06,742 DEBUG be.kdg.programming3.mangaStore.presentation.RemoveMangaController [http-nio-8080-exec-1] Deleting manga...
+2023-08-01 13:12:06,782 INFO be.kdg.programming3.mangaStore.presentation.MangaController [http-nio-8080-exec-3] controller is running showMangasView!
+2023-08-01 13:12:10,661 DEBUG be.kdg.programming3.mangaStore.presentation.RemoveMangakaController [http-nio-8080-exec-7] Deleting mangaka...
+2023-08-01 13:12:12,700 INFO be.kdg.programming3.mangaStore.presentation.PublisherController [http-nio-8080-exec-5] controller is running PublishersView!
+2023-08-01 13:12:14,192 DEBUG be.kdg.programming3.mangaStore.presentation.RemovePublisherController [http-nio-8080-exec-1] Deleting publisher...
+2023-08-01 13:12:14,205 INFO be.kdg.programming3.mangaStore.presentation.PublisherController [http-nio-8080-exec-3] controller is running PublishersView!
+2023-08-01 13:12:16,156 INFO be.kdg.programming3.mangaStore.presentation.MangaController [http-nio-8080-exec-9] controller is running showMangasView!
+2023-08-01 13:12:33,903 DEBUG be.kdg.programming3.mangaStore.presentation.AddMangaController [http-nio-8080-exec-8] Processing MangaViewModel{id=0, title='smth', author='smth', chapters=16, written=2023-08-04, genre=HORROR, pricePerCopy=18.0}
+2023-08-01 13:12:33,919 INFO be.kdg.programming3.mangaStore.presentation.MangaController [http-nio-8080-exec-5] controller is running showMangasView!
+2023-08-01 13:12:42,857 DEBUG be.kdg.programming3.mangaStore.presentation.AddMangakaController [http-nio-8080-exec-9] Processing MangakaViewModel{id=0, name='smth', gender=M, years=19}
+2023-08-01 13:12:52,804 DEBUG be.kdg.programming3.mangaStore.presentation.AddPublisherController [http-nio-8080-exec-10] Creating a new publisher...
+2023-08-01 13:12:52,812 INFO be.kdg.programming3.mangaStore.presentation.PublisherController [http-nio-8080-exec-2] controller is running PublishersView!
+2023-08-01 13:13:06,154 INFO be.kdg.programming3.mangaStore.presentation.MangaController [http-nio-8080-exec-4] controller is running showMangasView!
+2023-08-01 13:13:07,463 INFO be.kdg.programming3.mangaStore.presentation.MangaController [http-nio-8080-exec-8] Loading manga by id...
+2023-08-01 13:13:16,073 INFO be.kdg.programming3.mangaStore.presentation.MangakaController [http-nio-8080-exec-10] Loading mangaka by id...
+2023-08-01 13:13:18,916 INFO be.kdg.programming3.mangaStore.presentation.PublisherController [http-nio-8080-exec-3] controller is running PublishersView!
+2023-08-01 13:13:19,911 INFO be.kdg.programming3.mangaStore.presentation.PublisherController [http-nio-8080-exec-9] Loading publisher by id...

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "One Piece",
+    "author": "Eiichiro Oda",
+    "chapters": 1062,
+    "written": "11-Aug-2001",
+    "genre": "SHONEN",
+    "pricePerCopy": 12.5,
+    "publisher": {
+      "id": -1,
+      "name": "Shueisha",
+      "address": "Tokyo",
+      "startDate": "8-Aug-1926"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Naruto",
+    "author": "Masashi Kishimoto",
+    "chapters": 700,
+    "written": "16-Dec-2002",
+    "genre": "ACTION",
+    "pricePerCopy": 10.0,
+    "publisher": {
+      "id": -1,
+      "name": "Shueisha",
+      "address": "Tokyo",
+      "startDate": "8-Aug-1926"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Bleach",
+    "author": "Tite Kubo",
+    "chapters": 686,
+    "written": "20-Oct-2003",
+    "genre": "FANTASY",
+    "pricePerCopy": 13.6,
+    "publisher": {
+      "id": -1,
+      "name": "Shueisha",
+      "address": "Tokyo",
+      "startDate": "8-Aug-1926"
+    }
+  }
+]

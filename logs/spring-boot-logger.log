@@ -1,0 +1,40 @@
+2023-09-22 10:07:40,421 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-09-22 10:07:40,471 INFO org.springframework.boot.StartupInfoLogger [main] Starting MangaLibraryApplication using Java 17 on LAPTOP-I9SLKJ6M with PID 10040 (C:\Users\nikol\IdeaProjects\NiceName\build\classes\java\main started by nikol in C:\Users\nikol\IdeaProjects\NiceName)
+2023-09-22 10:07:40,472 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-09-22 10:07:40,475 INFO org.springframework.boot.SpringApplication [main] The following 2 profiles are active: "jdbc", "web"
+2023-09-22 10:07:42,801 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-22 10:07:42,806 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-09-22 10:07:42,897 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 74 ms. Found 0 JDBC repository interfaces.
+2023-09-22 10:07:42,922 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-22 10:07:42,925 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-22 10:07:42,962 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+2023-09-22 10:07:44,874 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-09-22 10:07:44,910 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-22 10:07:44,913 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-09-22 10:07:44,915 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-09-22 10:07:45,468 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-09-22 10:07:45,469 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4822 ms
+2023-09-22 10:07:45,818 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-09-22 10:07:46,232 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-09-22 10:07:46,347 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-22 10:07:46,393 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.11.Final
+2023-09-22 10:07:46,544 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-22 10:07:46,659 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-09-22 10:07:47,184 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-22 10:07:47,201 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-22 10:07:47,254 DEBUG be.kdg.programming3.mangaStore.presentation.MangakaController [main] Creating MangakaController
+2023-09-22 10:07:47,315 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-22 10:07:48,255 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-09-22 10:07:48,279 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-22 10:07:48,293 INFO org.springframework.boot.StartupInfoLogger [main] Started MangaLibraryApplication in 8.991 seconds (JVM running for 11.178)
+2023-09-22 10:07:58,255 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-22 10:07:58,255 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-09-22 10:07:58,263 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2023-09-22 10:08:00,954 INFO be.kdg.programming3.mangaStore.presentation.MangaController [http-nio-8080-exec-8] controller is running showMangasView!
+2023-09-22 10:08:04,450 INFO be.kdg.programming3.mangaStore.presentation.PublisherController [http-nio-8080-exec-6] controller is running PublishersView!
+2023-09-22 10:08:05,705 INFO be.kdg.programming3.mangaStore.presentation.MangaController [http-nio-8080-exec-2] controller is running showMangasView!
+2023-09-22 10:08:07,489 DEBUG be.kdg.programming3.mangaStore.presentation.RemoveMangaController [http-nio-8080-exec-8] Deleting manga...
+2023-09-22 10:08:07,521 INFO be.kdg.programming3.mangaStore.presentation.MangaController [http-nio-8080-exec-7] controller is running showMangasView!
+2023-09-22 10:08:13,958 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-22 10:08:13,958 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-09-22 10:08:13,964 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

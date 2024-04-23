@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add mangaka</title>
+
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap-icons/font/bootstrap-icons.css}">
+    <link rel="stylesheet" type="text/css" media="all" href="../static/navbar.css" th:href="@{/navbar.css}"/>
+    <script defer th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}">
+    </script>
+</head>
+<body class="bg-light text-center">
+
+<div th:replace="~{fragments/navbar::navigationbar(5)}"></div>
+
+<div class="container mt-5">
+    <form method="post" th:action="@{/addMangaka}" th:object="${mangakaViewModel}" novalidate class="col-md-6 offset-md-3 bg-primary p-4 rounded">
+        <label for="name">Name</label>
+        <input type="text" class="form-control mb-2" id="name" name="name" required/>
+
+        <label for="gender">Gender</label>
+        <input type="text" class="form-control mb-2" id="gender" name="gender"/>
+
+        <label for="years">Years</label>
+        <input type="number" class="form-control mb-2" id="years" name="years" required/>
+
+        <div class="alert alert-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+        <div class="alert alert-danger" th:if="${#fields.hasErrors('years')}" th:errors="*{years}"></div>
+
+        <button type="submit" class="btn btn-secondary">Submit</button>
+    </form>
+</div>
+
+<div th:insert="~{fragments/navbar::footer}">Programming 3 Project</div>
+
+</body>
+</html>

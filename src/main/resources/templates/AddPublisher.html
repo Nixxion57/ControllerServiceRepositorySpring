@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Publisher</title>
+
+  <link rel="stylesheet" type="text/css" media="all" href="../static/navbar.css" th:href="@{/navbar.css}"/>
+  <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+  <link rel="stylesheet" th:href="@{/webjars/bootstrap-icons/font/bootstrap-icons.css}">
+  <script defer th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+</head>
+<body class="bg-light text-center">
+
+<div th:replace="~{fragments/navbar::navigationbar(6)}"></div>
+
+<div class="container mt-5">
+  <form method="post" th:action="@{/addPublisher}" th:object="${publisherViewModel}" novalidate class="col-md-6 offset-md-3 bg-primary p-4 rounded">
+    <label for="name">Name</label>
+    <input type="text" class="form-control mb-2" id="name" name="name" required/>
+
+    <label for="address">Address</label>
+    <input type="text" class="form-control mb-2" id="address" name="address"/>
+
+    <label for="startDate">Start Date</label>
+    <input type="date" class="form-control mb-2" id="startDate" name="startDate"/>
+
+    <div class="alert alert-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+
+    <button type="submit" class="btn btn-secondary">Submit</button>
+  </form>
+</div>
+
+<div th:insert="~{fragments/navbar::footer}">Programming 3 Project</div>
+
+</body>
+</html>
